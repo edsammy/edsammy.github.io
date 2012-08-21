@@ -22,20 +22,16 @@ header, section, article, footer, aside, nav {
   font-size: 1em;
   font-style: italic;
   text-align: center;
-  margin-top: 20px; 
 }
 
 #wrapper {
   margin: 0 auto;
-  width: 520px;
-  height: 300px;
-  margin-top: 80px;
+  width: 550px;
+  margin-top: 150px;
   border: 0px solid;
   border-radius: 20px;
   padding-left: 40px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.07);
-}
+  padding-top: 20px; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif; }
@@ -44,24 +40,21 @@ body {
 header {
   padding: 0;
   top: 0;
-  border-bottom: 1px dotted;
-  width: 480px;
   font-family: "PatagoniaRegular", "Helvetica Neue", Helvetica, arial, sans-serif;
   text-transform: uppercase; 
   margin: 0 auto; }
   header #headline {
-    margin: 15px 0 0 0;
-    font-size: 4.2em;
+    font-size: 4.7em;
+    width: 575px;
+    margin: 0 auto;
+    line-height: 70px;
+    border-bottom: 1px dotted;
     text-align: left;
-    float: left;
-    width: 330px;
-    line-height: 70px; }
-  header #logo {
-    margin-left: 20px;
-  }
+    float: left; }
 
-nav ol{
-  margin-top: 45px;
+nav{
+  margin-top: 80px;
+  margin-left: 0;
 }
 
 nav li {
@@ -71,17 +64,14 @@ nav li {
   font-weight: 700;
   margin-left: 30px; }
   :first-child {
-    margin-left: 0; }
+    margin-left: 0px; }
   a{ text-decoration: none; }
-  a:hover{ border-bottom: 1px dotted; }
+/*  a:hover{ border-bottom: 1px dotted; }*/
 
 footer {
   clear: both;
   color: gray;
   font-size: 0.75em; }
-
-nav, footer {
-  margin: 20px 0; }
 
 /* Typesetting */
 h1, h2, h3, h4, h5, h6 {
@@ -114,7 +104,6 @@ p {
   margin-bottom: 10px;
   color: #333; }
 
-footer {}
 
 .clear {
   clear: both; }
