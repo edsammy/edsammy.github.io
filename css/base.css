@@ -7,7 +7,6 @@
 
 /* HTML resets */
 body, html, div, p, img, h1, h2, h3, h4, h5, h6, ol, ul, li {
-  margin: 0;
   padding: 0;
   font-weight: normal;
   font-size: 100%;
@@ -22,54 +21,36 @@ header, section, article, footer, aside, nav {
 #wrapper {
   margin: 0 auto;
   width: 900px;
-  padding: 0 20px; }
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 200px;
+}
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif; }
 
+
 header {
   padding: 0;
-  position: fixed;
   top: 0;
-  border-bottom: 1px dotted #666;
-  width: 970px;
+  border-bottom: 1px dotted;
+  width: 670px;
   background-color: #fff;
   font-family: "PatagoniaRegular", "Helvetica Neue", Helvetica, arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  margin: 0 auto; }
   header #logo {
-    margin: 30px 0 10px 0;
-    font-size: 2.6em; }
-    header #logo a {
-      color: #000;
-      text-decoration: none; }
-
-#navigation {
-  width: 150px;
-  top: 100px;
-  position: fixed;
-  display: inline-block;
-  margin-right: 20px; }
-  #navigation .title {
-    font-family: "SilkscreenNormal", Helvetica, Arial, Geneva, sans-serif;
-    font-size: 1.5em; }
-  #navigation .email {
-    margin-top: 25px; }
-  #navigation a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    line-height: 1.7em; }
-  #navigation a:hover {
-    text-decoration: underline; }
+    margin: 30px 0 5px 0;
+    font-size: 4.7em; }
 
 nav li {
   display: inline;
-  list-style-type: none;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  font-size: 2em;
+  margin-left: 35 px;
+}
 
 article {
-  margin-left: 170px;
-  margin-top: 120px;
   min-height: 400px; }
 
 footer {
