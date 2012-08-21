@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PatagoniaRegular';
-  src: url("fonts/Patagonia/Patagonia-webfont.eot");
-  src: url("fonts/Patagonia/Patagonia-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Patagonia/Patagonia-webfont.woff") format("woff"), url("fonts/Patagonia/Patagonia-webfont.ttf") format("truetype"), url("fonts/Patagonia/Patagonia-webfont.svg#PatagoniaRegular") format("svg");
+  src: url("Patagonia/Patagonia-webfont.eot");
+  src: url("Patagonia/Patagonia-webfont.eot?#iefix") format("embedded-opentype"), url("Patagonia/Patagonia-webfont.woff") format("woff"), url("Patagonia/Patagonia-webfont.ttf") format("truetype"), url("Patagonia/Patagonia-webfont.svg#PatagoniaRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
