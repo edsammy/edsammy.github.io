@@ -18,12 +18,23 @@ header, section, article, footer, aside, nav {
   display: block; }
 
 /* Put your styles below here */
+#revisit {
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px; 
+}
+
 #wrapper {
   margin: 0 auto;
-  width: 900px;
-  padding: 0 20px;
-  text-align: center;
-  margin-top: 200px;
+  width: 520px;
+  height: 300px;
+  margin-top: 80px;
+  border: 0px solid;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
 body {
@@ -34,24 +45,35 @@ header {
   padding: 0;
   top: 0;
   border-bottom: 1px dotted;
-  width: 670px;
-  background-color: #fff;
+  width: 480px;
   font-family: "PatagoniaRegular", "Helvetica Neue", Helvetica, arial, sans-serif;
   text-transform: uppercase; 
   margin: 0 auto; }
+  header #headline {
+    margin: 15px 0 0 0;
+    font-size: 4.2em;
+    text-align: left;
+    float: left;
+    width: 330px;
+    line-height: 70px; }
   header #logo {
-    margin: 30px 0 5px 0;
-    font-size: 4.7em; }
+    margin-left: 20px;
+  }
+
+nav ol{
+  margin-top: 45px;
+}
 
 nav li {
   display: inline;
   text-transform: lowercase;
   font-size: 2em;
-  margin-left: 35 px;
-}
-
-article {
-  min-height: 400px; }
+  font-weight: 700;
+  margin-left: 30px; }
+  :first-child {
+    margin-left: 0; }
+  a{ text-decoration: none; }
+  a:hover{ border-bottom: 1px dotted; }
 
 footer {
   clear: both;
@@ -84,7 +106,7 @@ h6 {
   font-size: 0.9em; }
 
 a {
-  color: #256ec4; }
+  color: #000000; }
 
 p {
   font-size: 1.08em;
@@ -92,13 +114,7 @@ p {
   margin-bottom: 10px;
   color: #333; }
 
-figure {
-  margin: 0; }
-
-img {
-  margin: 15px 0;
-  max-width: 750px; }
-
+footer {}
 
 .clear {
   clear: both; }
