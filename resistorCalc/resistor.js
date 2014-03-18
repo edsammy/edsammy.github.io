@@ -2,7 +2,7 @@ $(window).load(function(){
     $("#R").keypress(function (e) {
         var chr = String.fromCharCode(e.which);
         //Only allow numbers, SI prefixes & spaces to be entered. All other values are not entered in text box
-        return "0123456789TGMk ".indexOf(chr)>=0;
+        return "0123456789TGMk. ".indexOf(chr)>=0;
     });
 
     $('#R').keydown(function (event) {
