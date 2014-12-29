@@ -1,3 +1,3 @@
 edsammy.github.com
 ==================
-This is the portfolio site of Eddie Samuels
+This is the portfolio site of Eddie M Samuels
