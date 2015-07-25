@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://eddiesamuels.com</loc>
-    <lastmod>2014-10-21</lastmod>
+    <lastmod>2015-07-25</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -48,6 +48,11 @@
   <url>
     <loc>http://eddiesamuels.com/projects/underwater rover/</loc>
     <lastmod>2014-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://eddiesamuels.com/projects/wampum/</loc>
+    <lastmod>2015-07-25</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
