@@ -1,3 +1,5 @@
-edsammy.github.com
+edsammy.github.io
 ==================
-This is the portfolio site of Eddie M Samuels
+This is the portfolio site of Eddie Samuels
+
+[eddiesamuels.com](eddiesamuels.com)
