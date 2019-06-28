@@ -1,0 +1,11 @@
+:title: Site Upgrade
+:date: 1.7.13
+:body: |
+    Welcome to my new website! It was built using [Bonsai](http://www.tinytree.info), a ruby based dynamic site generator.
+    It is very easy to use and I would definitely recommend it to a friend.
+    I also used [twitter bootstrap](http://twitter.github.com/bootstrap/) for some styling.
+
+    This area of the site will feature small updates and informal projects while the projects section of the site will
+    include (more or less) finalized projects.
+
+    All the source code for the site can be found on [github](https://github.com/edsammy/edsammy.github.com).

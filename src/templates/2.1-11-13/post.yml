@@ -1,0 +1,9 @@
+:title: Calendar Reminders
+:date: 1.11.13
+:body: |
+
+    I wanted to have a summary of the events from my Google calendar delivered to my inbox on a weekly basis. I wrote a short Google script to get the job done.
+
+    [Google Apps Script](https://developers.google.com/apps-script/) is really great. All of Google Apps are easily to integrate with your code and it all runs in the browser.
+
+    [code](https://gist.github.com/4516246)

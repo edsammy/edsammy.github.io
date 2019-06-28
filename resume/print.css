@@ -1,0 +1,46 @@
+pre {
+    white-space: pre-wrap !important;
+}
+
+pre,
+blockquote {
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+* {
+    outline: none;
+}
+
+/* Print background graphics */
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

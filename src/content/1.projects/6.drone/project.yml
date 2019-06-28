@@ -1,0 +1,16 @@
+:headline: drone
+:body: |
+    *2011*
+    
+    Done as an experiment with drone technology in [Pervasive Computing](http://pervasive297.wikispaces.com/) course at the University of Rochester. Uses [ARDroneForP5](http://kougaku-navi.net/ARDroneForP5/index_en.html) Processing library to communicate with ARDrone.
+    
+    Semiautonomous flight was accomplished by using [NyAR4psg](http://nyatla.jp/nyartoolkit/wp/) video tracking Processing library. Check out the test flight video below.
+
+    [code](http://pervasive297.wikispaces.com/file/view/ARDroneForP5_Box.pde)
+
+
+
+
+:videos:
+  - 
+    31173966

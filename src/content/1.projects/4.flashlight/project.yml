@@ -1,0 +1,9 @@
+:headline: high powered flashlight
+:body: |
+    *2009*
+
+    This flashlight features a 1 watt high powered [Luxeon LED][1] and [Dialight lens][2] . Features a built in Li-ion battery and charger with charge indicator. LED driver circuit inspired by [dan's Instructable][3].
+
+    [1]: http://www.futureelectronics.com/en/technologies/semiconductors/lighting-solutions/high-power-led-emitters/white/Pages/3443249-LXHL-LW3C.aspx
+    [2]: http://www.futureelectronics.com/en/technologies/semiconductors/lighting-solutions/optics/single-led-optics/Pages/7081912-OP-005.aspx
+    [3]: http://www.instructables.com/id/Circuits-for-using-High-Power-LED-s/

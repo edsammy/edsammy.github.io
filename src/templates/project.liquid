@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "shared/head" %}
+  <body id="{{slug}}">
+    <section id="wrapper" class="project">
+      {% include "shared/header" %}
+    
+  	  <article>
+  	  	<h2>{{headline}}</h2>
+        <section role="main">
+		      {{body}}
+		    </section>
+
+        <figure>
+          {% if attachments %}
+            {% for attachment in attachments %}
+              <a href="{{attachment.path}}">{{ attachment.name | downcase}}</a>
+              <br>
+            {% endfor %}
+          {% endif %}
+        </figure>
+        
+        <figure>
+        {% for image in images %}
+          <img src="{{image.path}}" alt="{{image.name}}" />
+        {% endfor %}
+        </figure>
+
+        <figure>
+        {% if videos %}
+          {% for video in videos %}
+            <iframe src="http://player.vimeo.com/video/{{video}}" width="750" height="563" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          {% endfor %}
+        {% endif %}
+        </figure>
+
+        <figure>
+        {% if youtube %}
+            <iframe width="750" height="422" src="https://www.youtube.com/embed/{{youtube}}" frameborder="0" allowfullscreen></iframe>
+        {% endif %}
+        </figure>
+      </article>
+
+      <ul class="projectsbottom">
+          <figure>
+            <li><h2>projects</h2></li>
+            {% for project in siblings reversed %}
+            <li><a href="/projects/{{project.slug}}">{{ project.headline }}</a></li>
+          </figure>
+        {% endfor %}
+      </ul>
+
+      {% include "shared/footer" %}
+    </section>
+  </body>
+  {% include "shared/analytics" %}
+</html>
