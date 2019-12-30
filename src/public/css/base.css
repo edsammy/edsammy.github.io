@@ -11,7 +11,8 @@ body, html, div, p, img, h1, h2, h3, h4, h5, h6, ol, ul, li {
   font-weight: normal;
   font-size: 100%;
   outline: none;
-  border: none; }
+  border: none;
+  -webkit-font-smoothing: antialiased; }
 
 /* HTML5 block elements */
 header, section, article, footer, aside, nav {
@@ -34,13 +35,14 @@ header {
   border-bottom: 1px dotted #666;
   width: 750px;
   background-color: #fff;
-  font-family: "Cutive Mono","Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase; }
   header #logo {
     margin: 30px 0 10px 0;
     font-size: 2.4em; }
     header #logo a {
-      color: #000;
+      color: #333;
+      letter-spacing: 1.5px;
       text-decoration: none; }
 
 #navigation {

@@ -4,12 +4,24 @@ body, aside, .sanserif {
     font-family: 'Open Sans', sans-serif;
 }
 
+#email {
+    font-size: 12;
+}
+
+.company {
+    font-size: 110%;
+}
+
 .experience ol > li, .education ol  {
     font-family: 'Lora', serif;
 }
 
-.experience ol > li > span, .education span {
+.title {
     font-style: italic;
+}
+
+time {
+    font-style: normal;
 }
 
 h1,
@@ -63,8 +75,4 @@ h6 {
 /* Some more styling*/
 a {
     color: #333;
-}
-
-#email {
-    font-size: 12;
 }

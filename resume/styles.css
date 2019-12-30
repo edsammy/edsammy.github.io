@@ -183,31 +183,24 @@ li .fa, li .fab {
 
 .education ol > li {
     font-weight: 300;
-    margin-bottom: 175px;
+    margin-bottom: 100px;
 }
 
 .experience ol > li + li {
-    margin-top: 4em;
+    margin-top: 3.7em;
 }
 
-.education ol > li div,
-.experience ol > li header {
+.experience ol > li > ul + div {
+    margin-top: 1em;
+}
+
+.title {
     display: flex;
     flex-direction: row;
+    margin-left: 5px;
 }
 
-.experience ol > li > span,
-.education ol > li p,
-.experience ol > li header p {
-    font-weight: 400;
-}
-
-.experience ol > li header p {
-    font-size: 110%;
-}
-
-.education ol > li div > *:last-child,
-.experience ol > li header > *:last-child {
+time {
     margin-left: auto;
     margin-right: 25px;
 }
