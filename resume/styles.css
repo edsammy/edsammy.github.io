@@ -41,7 +41,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     text-rendering: optimizeLegibility;
     text-decoration-skip: ink;
-    hyphens: auto;
+    hyphens: none;
 }
 
 #save > section:first-of-type {
@@ -144,10 +144,14 @@ li .fa, li .fab {
     display: block;
     background-color: white;
     float: left;
-    margin: 6px 6px 0 10px;
+    margin: 6px 0px 0px 6px;
 }
 
-.skills > ul > li > span {
+.nl {
+    margin-right: 20px;
+}
+
+.skills > ul > li > span, .skills > ul > div > li > span {
     background-color: white;
     border: 1px solid rgba(45, 45, 45, 0.1618);
     border-radius: 3px;
@@ -158,9 +162,9 @@ li .fa, li .fab {
 
 /* Experience & Education */
 
-.education, .experience {
+/*.education, .experience {
     margin-left: 5px;
-}
+}*/
 
 .education ol,
 .experience ol {
@@ -183,11 +187,11 @@ li .fa, li .fab {
 
 .education ol > li {
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .experience ol > li + li {
-    margin-top: 3.7em;
+    margin-top: 1em;
 }
 
 .experience ol > li > ul + div {
@@ -197,7 +201,7 @@ li .fa, li .fab {
 .title {
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 time {
@@ -211,5 +215,7 @@ time {
 
 .experience ol > li ul li {
     list-style-type: square;
-    margin-left: 1.618em;
+    margin-left: 2em;
+    font-size: 0.9em;
+    max-width: 90%
 }
