@@ -160,13 +160,26 @@ li .fa, li .fab {
     display: inline-block;
 }
 
+#newed {
+    margin-top:50px;
+}
+
+#BS, #sidetime {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#sidetime {
+    font-style: italic;
+    display: block;
+}
+
 /* Experience & Education */
 
 /*.education, .experience {
     margin-left: 5px;
 }*/
 
-.education ol,
 .experience ol {
     margin: 0;
     padding: 0;
@@ -196,6 +209,10 @@ li .fa, li .fab {
 
 .experience ol > li > ul + div {
     margin-top: 1em;
+}
+
+.company {
+    margin-top: 10px;
 }
 
 .title {
