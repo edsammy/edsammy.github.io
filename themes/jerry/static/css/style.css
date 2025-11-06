@@ -22,7 +22,7 @@ body {
     color: #333;
     background-color: #fdfdfd;
     margin: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 40px 40px;
 }
 
 .container {
@@ -204,13 +204,10 @@ article div {
 /* Project Images */
 .project-images {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 30px;
 }
 
-.project-images img {
+img {
     width: 100%;
     height: auto;
-    border: 1px solid #eee;
 }

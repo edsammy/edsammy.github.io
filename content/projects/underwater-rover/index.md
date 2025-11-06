@@ -1,7 +1,6 @@
 ---
 title: "underwater rover"
 date: 2014-01-01
-videos: ["103242633"]
 ---
 *summer 2014*
 
@@ -16,11 +15,3 @@ The rover is powered by a 3 cell LiPo battery which is also housed in the buoy. 
 Check out the rover schematic and Arduino code below!
 
 This project was funded by the [New York NASA Space Grant Consortium](http://astrosun2.astro.cornell.edu/specialprograms/spacegrant/). Created with Matt Churchman and Matthew Liu.
-
-<!-- Project Images -->
-{{< figure src="images/1.jpg" alt="1" >}}
-{{< figure src="images/2.JPG" alt="2" >}}
-{{< figure src="images/3.rovercircuitboard.JPG" alt="3 rovercircuitboard" >}}
-{{< figure src="images/4.JPG" alt="4" >}}
-{{< figure src="images/5.JPG" alt="5" >}}
-{{< figure src="images/6.JPG" alt="6" >}}
