@@ -189,10 +189,15 @@ main ul li a {
     text-decoration: none;
 }
 
+time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9em;
+}
+
 .list-date {
-    display: inline;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9em;
+    display: inline;
     margin-right: 20px;
     color: #888;
 }
