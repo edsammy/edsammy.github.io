@@ -1,0 +1,9 @@
+name = "Jerry"
+license = "MIT"
+tags = ["blog", "minimalist", "clean"]
+features = ["blog"]
+min_version = "0.41"
+
+[author]
+  name = "Jerry"
+  homepage = ""

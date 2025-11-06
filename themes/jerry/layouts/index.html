@@ -1,0 +1,31 @@
+{{ define "main" }}
+    {{ with .Site.Params.about }}
+    {{ $about := . }}
+    <section class="about">
+        <div class="about-inner">
+            {{ with $about.photo }}
+            <img src="{{ . | relURL }}" alt="{{ default "Portrait photo" $about.photoAlt }}" class="about-photo">
+            {{ end }}
+            <div class="about-text">
+                {{ $about.text | markdownify }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+    {{ with .Site.Params.contact.email }}
+    <section class="contact">
+        <p class="contact-email">{{ . }}</p>
+    </section>
+    {{ end }}
+    {{ with .Site.Params.links }}
+    <section class="links">
+        <ul class="links-list">
+            {{ range . }}
+            <li>
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+{{ end }}

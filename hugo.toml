@@ -1,0 +1,47 @@
+baseURL = 'https://edsammy.github.io/'
+languageCode = 'en-us'
+title = 'eddie'
+theme = 'jerry'
+
+[params.about]
+text = '''
+engineer
+ * Built [panda](https://techcrunch.com/2017/07/07/comma-ai-launches-an-88-universal-car-interface-called-panda/) & [eon](https://www.engadget.com/2017-10-24-comma-ai-eon-autonomous-future.html) at [comma.ai](https://comma.ai)
+ * Created [Nance](https://nance.app) ([acquired](https://decent.build/blog/decent-acquires-governance-automation-platform-nance))
+ * **NOW: building something new ✨**
+ * Fan of soup & Seinfeld
+ * Torah reading Jew 🇮🇱
+'''
+
+[[params.links]]
+name = 'github(1)'
+url = 'https://github.com/edsammy'
+
+[[params.links]]
+name = 'github(2)'
+url = 'https://github.com/jigglyjams'
+
+[[params.links]]
+name = 'linkedin'
+url = 'https://www.linkedin.com/in/edsammy'
+
+[[params.links]]
+name = 'twitter'
+url = 'https://twitter.com/edsammy'
+
+[params.contact]
+email = 'eddie@studlabs.com'
+
+[menu]
+[[menu.main]]
+  name = 'projects'
+  url = '/projects'
+  weight = 1
+[[menu.main]]
+  name = 'blog'
+  url = '/blog'
+  weight = 2
+[[menu.main]]
+  name = 'resume'
+  url = '/resume.pdf'
+  weight = 3

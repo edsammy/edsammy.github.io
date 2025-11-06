@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <article>
+        <h2>{{ .Title }}</h2>
+        <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        <div>
+            {{ .Content }}
+        </div>
+        <div class="project-images">
+            {{ range .Resources.ByType "image" }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Title }}" />
+            {{ end }}
+        </div>
+    </article>
+{{ end }}
