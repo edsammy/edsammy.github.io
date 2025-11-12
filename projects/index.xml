@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on eddie</title>
+    <link>https://edsammy.github.io/projects/</link>
+    <description>Recent content in Projects on eddie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://edsammy.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wampum</title>
+      <link>https://edsammy.github.io/projects/wampum/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/wampum/</guid>
+      <description>senior design 2015&#xA;This project is a network of wireless heart rate monitors to be used in ad-hoc recovery rooms following disaster scenarios. The wireless monitors, or nodes, are placed on patients and determine their heart rate using photoplethysmography. The data sent from each node is viewed on a nearby laptop where medical personnel can monitor patients and be alerted of any abnormal activity.&#xA;The project is dubbed WAMPUM for Wireless Aggregating Multinode, PUlse Monitor.</description>
+    </item>
+    <item>
+      <title>underwater rover</title>
+      <link>https://edsammy.github.io/projects/underwater-rover/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/underwater-rover/</guid>
+      <description>summer 2014&#xA;This is an underwater rover that was developed at Lockheed Martin as a prototype for the Engineering Explorers Post program.&#xA;The rover is propelled by 3 bilge pumps, 2 on the sides for forward jetting and 1 mounted underneath with a propellor for up and down movement. An Arduino Pro Mini receives serial commands through an XBee radio which floats on top of the water in a tethered buoy (because wireless signals cannot be transmitted through water).</description>
+    </item>
+    <item>
+      <title>power quality monitor</title>
+      <link>https://edsammy.github.io/projects/wireless-power-monitor/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/wireless-power-monitor/</guid>
+      <description>summer 2013&#xA;This is a WiFi enabled three-phase power quality monitor. The device uses an Arudino MEGA as its brains, a MAXQ3183 power meter IC to read power quality data, and a WiFly Shield for communication. Two devices are currently installed at the University of Rochester and collecting data which can be viewed here.&#xA;This project was funded by the Xerox Corporation and the STEP of the US Department of Energy.</description>
+    </item>
+    <item>
+      <title>wireless data transmission</title>
+      <link>https://edsammy.github.io/projects/baja/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/baja/</guid>
+      <description>2011&#xA;Installed on University of Rochester’s SAE Baja Team for 2012 competition.&#xA;The Arudino Fio is used in this project to sample analog data signals and send them wirelessly using a pair of Xbee modules. All data is displayed on the dashboard using analog electronics and in realtime on a nearby computer that is running the display program.</description>
+    </item>
+    <item>
+      <title>rgb backlight</title>
+      <link>https://edsammy.github.io/projects/rgb-backlight/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/rgb-backlight/</guid>
+      <description>2010&#xA;A high powered, RGB LED powered by a LED driver based on dan’s Instructable and an Arduino microcontroller.&#xA;The LED module connects to the controller through a USB connector and the controller is powered by a 5 volt power supply. After powering on the device, a push button on the top of the controller allows the user to cycle through a series of colors that are embedded in the code.</description>
+    </item>
+    <item>
+      <title>electric jetta</title>
+      <link>https://edsammy.github.io/projects/ejetta/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/projects/ejetta/</guid>
+      <description>2008-2011&#xA;Electric car conversion of a VW Jetta. Goes about 25 miles/charge with a top speed of 55mph. The car was dismantled in 2011 after having multiple mechanical issues.</description>
+    </item>
+  </channel>
+</rss>

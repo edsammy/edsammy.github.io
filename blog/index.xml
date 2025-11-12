@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on eddie</title>
+    <link>https://edsammy.github.io/blog/</link>
+    <description>Recent content in Blogs on eddie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://edsammy.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Nance Story</title>
+      <link>https://edsammy.github.io/blog/the-nance-story/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/blog/the-nance-story/</guid>
+      <description>Backstory In 2021 my sister and brother-in-law launched an NFT project called Fly Frogs1. He did the art, she wrote the code. I was working at an engineering consultancy called Very at the time doing electrical engineering and product development for clients that either had an idea they wanted to turn into a product OR to rescue them from their previous consultancy that promised they could do the same. It was a good place to work but consultancies are a tough business, maintaining a satisfied engineering work force is difficult especially with the constant reminder of what the company is charging clients vs.</description>
+    </item>
+    <item>
+      <title>This is the first post</title>
+      <link>https://edsammy.github.io/blog/first-post/</link>
+      <pubDate>Fri, 31 Oct 2025 16:29:58 -0500</pubDate>
+      <guid>https://edsammy.github.io/blog/first-post/</guid>
+      <description>Getting started because its hard to get started&#xA;Reminds me of The Staunton Lick. Not sure why but it does!</description>
+    </item>
+  </channel>
+</rss>
