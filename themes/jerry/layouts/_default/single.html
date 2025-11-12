@@ -1,16 +1,26 @@
 {{ define "main" }}
+    {{ $readingSpeed := or .Site.Params.reading_speed }}
+    {{ $readingTime := math.Ceil (div (float .WordCount) (float $readingSpeed)) }}
     <article>
         <h2>{{ .Title }}</h2>
+        {{ if eq .Section "blog" }}
+        {{ end }}
         {{ if ne .Section "projects" }}
-            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        <div class="post-meta">
+            <span>{{ lang.FormatNumber 0 .WordCount }} words</span>
+            <span>• {{ printf "%.0f" $readingTime }} min read</span>
+        </div>
         {{ end }}
         <div>
             {{ .Content }}
         </div>
+        {{ if eq .Section "projects" }}
         <div class="project-images">
             {{ range .Resources.ByType "image" }}
                 <img src="{{ .RelPermalink }}" alt="{{ .Title }}" />
             {{ end }}
         </div>
+        {{end}}
     </article>
 {{ end }}

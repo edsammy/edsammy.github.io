@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'eddie'
 theme = 'jerry'
 
+[params]
+reading_speed = 300
+
 [params.about]
 text = '''
 engineer

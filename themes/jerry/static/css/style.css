@@ -88,6 +88,12 @@ main h2 {
     color: #333;
 }
 
+main h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em;
+    color: #333;
+}
+
 main ul {
     list-style: none;
     padding: 0;
@@ -184,7 +190,7 @@ main ul li {
     margin-bottom: 15px;
 }
 
-main ul li a {
+main a {
     color: #008080;
     text-decoration: none;
 }
@@ -198,12 +204,21 @@ time {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9em;
     display: inline;
-    margin-right: 20px;
     color: #888;
 }
 
 article div {
     margin-top: 20px;
+}
+
+.post-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Project Images */
@@ -215,4 +230,13 @@ article div {
 img {
     width: 100%;
     height: auto;
+}
+
+.footnotes {
+    margin-top: 40px;
+}
+
+sup[id^="fnref"],
+li[id^="fn"] {
+    scroll-margin-top: 150px;
 }
