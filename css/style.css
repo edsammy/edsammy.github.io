@@ -17,8 +17,9 @@
 
 /* Basic styles */
 body {
+    font-size: 1.3em;
     font-family: sans-serif;
-    line-height: 1.6;
+    line-height: 1.85;
     color: #333;
     background-color: #fdfdfd;
     margin: 0;
@@ -94,9 +95,11 @@ main h3 {
     color: #333;
 }
 
-main ul {
-    list-style: none;
-    padding: 0;
+main h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: -1em;
 }
 
 .about {
@@ -190,6 +193,10 @@ main ul li {
     margin-bottom: 15px;
 }
 
+article ul li {
+    margin-bottom: 0;
+}
+
 main a {
     color: #008080;
     text-decoration: none;
@@ -209,6 +216,26 @@ time {
 
 article div {
     margin-top: 20px;
+}
+
+article ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+article ul ul {
+    list-style: circle;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article ol {
+    list-style: decimal;
+    margin-left: 2rem;
+    padding: 0;
 }
 
 .post-meta {
