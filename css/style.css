@@ -259,6 +259,35 @@ img {
     height: auto;
 }
 
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 0.85em;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #eee;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    border-bottom: 2px solid #333;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
 .footnotes {
     margin-top: 40px;
 }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eddie</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <h1><a href="https://edsammy.github.io/">eddie</a></h1>
+    <nav>
+        <ul>
+            
+            <li><a href="/projects">projects</a></li>
+            
+            <li><a href="/blog">blog</a></li>
+            
+            <li><a href="/resume.pdf">resume</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+        <main>
+            
+    
+    
+    <article>
+        <h2>So you want to AI your PCBs?</h2>
+        
+        
+        
+        <time>Feb 22, 2026</time>
+        <div class="post-meta">
+            <span>1,270 words</span>
+            <span>• 5 min read</span>
+        </div>
+        
+        <div>
+            <p>It&rsquo;s unclear how AI makes its way into the electronics and PCB world. There are a lot of players getting into the space and a lot of skeptical
+electrical engineers wait to see how it all plays out. This post is a brief overview of each company on my watch list. I might follow up
+with demos of each one later.</p>
+<p>There are a few approaches being taken, <strong>design with code 💻</strong>, <strong>chat with design 💬</strong>, and <strong>blackbox 📦</strong>. All have their flaws which is slowing adoption.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Company</th>
+<th>Website</th>
+<th>GitHub</th>
+<th>Funding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💻</td>
+<td><a href="#jitx">JITX</a></td>
+<td><a href="https://www.jitx.com/" target="_blank" rel="noopener noreferrer">jitx.com</a></td>
+<td><a href="https://github.com/JITx-Inc" target="_blank" rel="noopener noreferrer">JITx-Inc</a></td>
+<td>~$12M Series A (Sequoia)</td>
+</tr>
+<tr>
+<td>💻</td>
+<td><a href="#diode-computers">Diode Computers</a></td>
+<td><a href="https://www.diode.computer/" target="_blank" rel="noopener noreferrer">diode.computer</a></td>
+<td><a href="https://github.com/diodeinc" target="_blank" rel="noopener noreferrer">diodeinc</a></td>
+<td>~$11M Series A (a16z)</td>
+</tr>
+<tr>
+<td>💻</td>
+<td><a href="#atopile">atopile</a></td>
+<td><a href="https://atopile.io/" target="_blank" rel="noopener noreferrer">atopile.io</a></td>
+<td><a href="https://github.com/atopile/atopile" target="_blank" rel="noopener noreferrer">atopile</a></td>
+<td>$500K Seed (YC)</td>
+</tr>
+<tr>
+<td>💻</td>
+<td><a href="#tscircuit">tscircuit</a></td>
+<td><a href="https://tscircuit.com/" target="_blank" rel="noopener noreferrer">tscircuit.com</a></td>
+<td><a href="https://github.com/tscircuit/tscircuit" target="_blank" rel="noopener noreferrer">tscircuit</a></td>
+<td>undisclosed (Boost VC)</td>
+</tr>
+<tr>
+<td>💬</td>
+<td><a href="#flux">Flux</a></td>
+<td><a href="https://www.flux.ai/" target="_blank" rel="noopener noreferrer">flux.ai</a></td>
+<td><a href="https://github.com/buildwithflux" target="_blank" rel="noopener noreferrer">buildwithflux</a></td>
+<td>~$12M Seed (Outsiders Fund)</td>
+</tr>
+<tr>
+<td>📦</td>
+<td><a href="#quilter">Quilter</a></td>
+<td><a href="https://www.quilter.ai/" target="_blank" rel="noopener noreferrer">quilter.ai</a></td>
+<td><a href="https://github.com/quilterai" target="_blank" rel="noopener noreferrer">quilterai</a></td>
+<td>~$40M Series B (Index)</td>
+</tr>
+<tr>
+<td>📦</td>
+<td><a href="#deeppcb">DeepPCB</a></td>
+<td><a href="https://deeppcb.ai/" target="_blank" rel="noopener noreferrer">deeppcb.ai</a></td>
+<td></td>
+<td>InstaDeep (acquired by BioNTech)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="design-with-code">Design with code</h3>
+<p>These involve using code to describe schematics and in some cases board layout as well. This is a solid approach since that is the most time consuming part of
+electronics design (est ~40%) and the LLMs are eager to do things with code<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. For the most part, you are still routing manually.</p>
+<h4 id="jitx">JITX</h4>
+<p>Founded by Duncan Haldane in 2017, they started out with their own language built on top of <a href="https://lbstanza.org" target="_blank" rel="noopener noreferrer">Stanza</a> but recently
+pivoted to a full rebuild in native Python. This was my biggest complaint when I first tried it out in 2020 so nice move with the rebuild!
+JITX runs as a VSCode extension that connects to your JITX account and has board and schematic viewing tools. They have a free plan for opensource
+stuff (not sure of all the limitations) and contact us pricing for enterprise. Their new <a href="https://www.youtube.com/watch?v=Ekf5dXSDk6U" target="_blank" rel="noopener noreferrer">routing tools</a> look very usable.
+I&rsquo;m excited to give JITX another shot.</p>
+<p><img src="./images/jitx.png" alt="jitx vscode"></p>
+<h4 id="diode-computers">Diode Computers</h4>
+<p>Founded by Lenny Khazan and Davide Asnaghi during YC Summer 2024, they began with a schematic and PCB design review system but later pivoted to the design
+with code approach. They have their own python-esque language called Zener (<a href="https://docs.pcb.new/pages/spec" target="_blank" rel="noopener noreferrer">the docs</a> are good)
+to describe schematics and export the footprints to KiCAD for you to route manually. I met up with the team at the New Lab in Brooklyn a few months ago and they were super nice!
+They&rsquo;re building some great visualization, part finding, and order workflow tooling in a very open way which is nice to see. I tried designing something with Zener and struggled with it a bit but that was before they did <a href="https://claude.com/blog/making-claude-a-better-electrical-engineer" target="_blank" rel="noopener noreferrer">their work with Anthropic</a> so I do want to give it another go. They make money by charging clients anywhere from $10k-$50k for new designs which is ~10x cheaper than a US consultant would charge. Great business model!</p>
+<p><img src="./images/diode.png" alt="diode app"></p>
+<h4 id="atopile">atopile</h4>
+<p>Founded by former Tesla engineers Matt Wildoer, Timothée Peter, and Narayan Powderly in 2023, they have their own python-esque language called ato which is
+used to describe schematics and you do the routing in KiCAD (<a href="https://github.com/atopile/atopile/discussions/881" target="_blank" rel="noopener noreferrer">for now</a>).
+They have a public <a href="https://packages.atopile.io" target="_blank" rel="noopener noreferrer">package system</a> for symbols, footprints, and pre-routed design blocks. This seems super powerful and if you are using
+common design blocks you could already have a lot of your routing done for you. They have a very active Discord community where you can see system level updates
+and follow along with community projects. I briefly tried atopile a year ago but didn&rsquo;t get too far with my design and then went back to KiCAD,
+will need to give it another shot. It is not immediately clear what their business model is.</p>
+<p><img src="./images/atopile.png" alt="atopile packages"></p>
+<h4 id="tscircuit">tscircuit</h4>
+<p>This started as (seemingly) a passion project of Severin Ibarluzea&rsquo;s in 2022 and became his full-time thing in 2024. It uses React Typescript components to define your
+schematic and I think has some kind of routing system but I can&rsquo;t yet tell. You can use it in browser as shown below or run it locally. Going with React is a bold choice
+and will be a hurdle to get electrical engineers to use it but if its AI all the way down then maybe it doesn&rsquo;t matter? They were working a lot on an autorouter
+about a year ago but I don&rsquo;t see any updates on it lately, curious what happened there. There is a package system built on npm which lets you reuse and share
+components and design blocks. Looking forward to digging into how the routing works. It is not immediately clear what their business model is.</p>
+<p><img src="./images/tscircuit.png" alt="tscircuit app"></p>
+<h3 id="chat-with-design">Chat with Design</h3>
+<p>This is more of a copilot approach where you use a traditional user interface to build your schematic and route but also have a copilot style chat bar for AI stuff. This
+makes a lot of sense and builds on the original GitHub copilot model in VSCode.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h4 id="flux">Flux</h4>
+<p>Founded in 2019 by Matthias Wagner, Lance Cassidy, and Christian Blank, they started as a fully collaborative in browser electronics design platform and tacked on an AI copilot in 2023.
+It seems like they dump a lot of money into influencer ads and you hear about them a lot if you watch hardware videos on YouTube. They have a credit based pricing model
+starting at $15/month and you can&rsquo;t even try it out without signing up for a 14 day trial which is a huge barrier to entry.
+I am curious to see the full version since I hear about it a lot but have never heard anyone who designs boards talk about it in a meaningful way.</p>
+<p><img src="./images/flux.png" alt="flux app"></p>
+<h3 id="blackbox">Blackbox</h3>
+<p>This approach accepts minimal input form the user and gives you a finished board design.
+The ones below are more traditional auto-routers and do not have any schematic features.</p>
+<h4 id="quilter">Quilter</h4>
+<p>Founded in 2019 by Sergiy Nesterenko, they are a physics driven AI autorouter. You have to do the schematic and footprint generation yourself so it could pair nicely with
+Diode or atopile to give you a full design system. I uploaded a very minimal PCB to try it out. It generates ~100 candidate layouts and emails you when its done.
+They recently did a complex layout for an iMX8M SOM and carrier board in ~10x less time than a human. This is super cool! I will try using some of my old designs to see
+how it compares to my routing and also try pairing it with a code based solution in the future.</p>
+<p><img src="./images/quilter.png" alt="quilter.png"></p>
+<h4 id="deeppcb">DeepPCB</h4>
+<p>Founded in 2019 by Karim Beguir, they&rsquo;re a side project of <a href="https://instadeep.com/" target="_blank" rel="noopener noreferrer">Instadeep</a> which was acquired by BioNTech
+(yes the COVID vaccine co) in 2023. They have a web based platform where you upload a PCB
+file and it will place components as well as auto-route. They have a confusing credit based system
+and I don&rsquo;t know how many I would need to run a board. I guess you do get a slight say in where things
+go by defining keep out areas. Stacking this head to head with Quilter would be a cool contest later.</p>
+<p><img src="./images/deeppcb.png" alt="deeppcb app"></p>
+<h3 id="anyone-else">Anyone else?</h3>
+<p>This space is still fresh and needs new ideas in my opinion.</p>
+<p>Are there any platforms or apps you think I should keep my eye on or do a deeper dive on?</p>
+<p>Shoot me an email <a href="mailto:eddie@studlabs.com">eddie@studlabs.com</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>You might be asking why can&rsquo;t we just feed KiCAD files to the LLM? KiCAD uses a super verbose text format called <a href="https://dev-docs.kicad.org/en/components/sexpr/index.html" target="_blank" rel="noopener noreferrer">s-expressions</a>. The file representing an <a href="https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/MCU_Espressif.kicad_symdir/ESP32-C3.kicad_sym" target="_blank" rel="noopener noreferrer">ESP32 microcontroller is 700 lines of text</a>! It sort of works sometimes but usually you hit a lot of snags trying to get the LLM to do things with KiCAD.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I originally had <a href="https://circuitmind.io" target="_blank" rel="noopener noreferrer">Circuit Mind</a> and <a href="https://celus.io" target="_blank" rel="noopener noreferrer">Celus</a> here but removed them since I couldn&rsquo;t find a way to try it out without contacting them&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </div>
+        
+    </article>
+
+        </main>
+        <footer>
+  <p></p>
+</footer>
+
+    </div>
+</body>
+</html>

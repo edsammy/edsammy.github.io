@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on eddie</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://edsammy.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So you want to AI your PCBs?</title>
+      <link>https://edsammy.github.io/blog/ai-pcbs/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://edsammy.github.io/blog/ai-pcbs/</guid>
+      <description>It&amp;rsquo;s unclear how AI makes its way into the electronics and PCB world. There are a lot of players getting into the space and a lot of skeptical electrical engineers wait to see how it all plays out. This post is a brief overview of each company on my watch list. I might follow up with demos of each one later.&#xA;There are a few approaches being taken, design with code 💻, chat with design 💬, and blackbox 📦.</description>
+    </item>
     <item>
       <title>Business School</title>
       <link>https://edsammy.github.io/blog/business-school/</link>
