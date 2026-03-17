@@ -1,13 +1,12 @@
 {{ define "main" }}
-    <ul>
+    <ul{{ if eq .Section "shop" }} class="shop-list"{{ end }}>
         {{ range .Pages }}
         <li>
             {{ if eq .Section "projects" }}
             <span class="list-date">{{ .Date.Format "2006" }}</span>
+            {{ else if eq .Section "shop" }}
             {{ else }}
-            {{ if ne .Section "projects" }}
             <time class="list-date">{{ .Date.Format "Jan 02, 2006" }}</time>
-            {{ end }}
             {{ end }}
             <a href="{{ .Permalink }}">
                 {{ .Title }}

@@ -238,6 +238,11 @@ article ol {
     padding: 0;
 }
 
+.shop-list {
+    list-style: none;
+    padding: 0;
+}
+
 .post-meta {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.8em;
@@ -252,6 +257,18 @@ article ol {
 .project-images {
     margin-top: 30px;
     grid-gap: 30px;
+}
+
+/* Product Gallery */
+.product-gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.product-gallery img {
+    border-radius: 4px;
 }
 
 img {

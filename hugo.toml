@@ -45,6 +45,10 @@ email = 'eddie@studlabs.com'
   url = '/blog'
   weight = 2
 [[menu.main]]
+  name = 'shop'
+  url = '/shop/cammy'
+  weight = 3
+[[menu.main]]
   name = 'resume'
   url = '/resume.pdf'
-  weight = 3
+  weight = 4

@@ -2,10 +2,8 @@
     {{ $readingSpeed := or .Site.Params.reading_speed }}
     {{ $readingTime := math.Ceil (div (float .WordCount) (float $readingSpeed)) }}
     <article>
-        <h2>{{ .Title }}</h2>
-        {{ if eq .Section "blog" }}
-        {{ end }}
-        {{ if ne .Section "projects" }}
+        <h2>{{ .Title }}{{ if .Params.Price }} <span class="price">— {{ .Params.Price }}</span>{{ end }}</h2>
+        {{ if and (ne .Section "projects") (ne .Section "shop") }}
         <time>{{ .Date.Format "Jan 2, 2006" }}</time>
         <div class="post-meta">
             <span>{{ lang.FormatNumber 0 .WordCount }} words</span>
@@ -21,6 +19,6 @@
                 <img src="{{ .RelPermalink }}" alt="{{ .Title }}" />
             {{ end }}
         </div>
-        {{end}}
+        {{ end }}
     </article>
 {{ end }}
