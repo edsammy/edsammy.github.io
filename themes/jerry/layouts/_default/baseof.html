@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "shop" }}{{ .Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:title" content="{{ .Title }}{{ with .Description }} — {{ . }}{{ end }}">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
