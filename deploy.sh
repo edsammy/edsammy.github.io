@@ -1,12 +1,14 @@
 #!/bin/bash
 set -e
+
+rm -rf public
 hugo
+
 cd public
-if [[ -n $(git status --porcelain) ]]; then
-  git add --all
-  git commit -m "Deploy $(date)"
-  git push origin gh-pages
-else
-  echo "No changes to deploy."
-fi
+echo ".DS_Store" > .gitignore
+git init
+git checkout -b gh-pages
+git add --all
+git commit -m "Deploy $(date)"
+git push --force git@github.com:edsammy/edsammy.github.com.git gh-pages
 cd ..
