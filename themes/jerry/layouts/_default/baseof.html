@@ -11,7 +11,7 @@
     {{ if .Params.og_image }}
     <meta property="og:image" content="{{ .Params.og_image | absURL }}">
     {{ else }}
-    {{ with (.Resources.ByType "image").GetMatch "*" }}
+    {{ with index (.Resources.ByType "image") 0 }}
     <meta property="og:image" content="{{ .Permalink }}">
     {{ end }}
     {{ end }}
