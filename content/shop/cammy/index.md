@@ -1,21 +1,25 @@
 +++
 title = 'cammy'
+description = 'The best Raspberry Pi CM5 camera developer kit'
 date = 2026-03-17
 [params]
   price = '$599'
+  buy_url = ''
 +++
-[Raspberry Pi CM5](https://www.raspberrypi.com/products/compute-module-5) based camera developer kit. Includes EVERYTHING you need to get started!
+
+**BETA UNITS IN PRODUCTION**
+
+*PREORDER SOON*
+
+#### INCLUDED
 - Carrier board
 - Raspberry Pi Computer Module 5 (16gb RAM)
 - 2x IMX cameras
 - 1x 18650 battery
 - 1x 1TB NVMe
+- Fasteners and mounts
 
-**BETA UNITS IN PRODUCTION - PREORDER SOON 👀**
-
-{{< gallery >}}
-
-**TECH SPECS:**
+#### TECH SPECS
 - Single 18650 battery power
 - 2x 22-pin MIPI CSI-2 cameras
 - M.2 Key M 2230 (PCIe 2.0)
@@ -26,5 +30,5 @@ date = 2026-03-17
 - USB-C charging, data, & [CM5 boot flashing](https://github.com/raspberrypi/usbboot)
 - micro HDMI video output
 - 2x user input buttons
-- User RGB LED 
+- User RGB LED
 - 4-pin fan connector

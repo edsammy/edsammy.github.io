@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <article class="product-page">
+        <h2>{{ .Title }}</h2>
+        {{ with .Description }}<p class="product-description">{{ . }}</p>{{ end }}
+        <div class="product-price-row">
+            <span class="product-price">{{ .Params.Price }}</span>
+            {{ if .Params.buy_url }}
+            <a href="{{ .Params.buy_url }}" class="product-buy-btn">RESERVE</a>
+            {{ else }}
+            <span class="product-buy-btn product-buy-btn--disabled">COMING SOON</span>
+            {{ end }}
+        </div>
+        <div class="product-gallery">
+            {{ range .Resources.ByType "image" }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
+            {{ end }}
+        </div>
+        <div class="product-details">
+            {{ .Content }}
+        </div>
+    </article>
+{{ end }}
