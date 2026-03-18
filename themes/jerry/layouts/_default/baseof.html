@@ -3,9 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Site.Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "shop" }}{{ .Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
+    {{ if .Params.og_image }}
+    <meta property="og:image" content="{{ .Params.og_image | absURL }}">
+    {{ else }}
+    {{ with (.Resources.ByType "image").GetMatch "*" }}
+    <meta property="og:image" content="{{ .Permalink }}">
+    {{ end }}
+    {{ end }}
     <link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    {{ $css := resources.Get "css/style.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 <body>
     <div class="container">
