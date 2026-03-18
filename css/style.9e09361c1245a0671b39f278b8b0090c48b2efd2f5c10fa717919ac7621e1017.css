@@ -1,0 +1,381 @@
+/* Font faces */
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url("/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url("/fonts/IBMPlexMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Basic styles */
+body {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    line-height: 1.85;
+    color: #333;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+header h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+header nav ul {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav a {
+    font-family: inherit;
+    color: #008080;
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 6px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: #f0f0f0;
+}
+
+/* Main content */
+main h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2em;
+    color: #333;
+}
+
+main h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em;
+    color: #333;
+}
+
+main h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-photo {
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+.about-text p {
+    margin: 0 0 1em;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text ul {
+    list-style: disc;
+    margin: 0 0 0 2rem;
+    padding: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 0;
+}
+
+.about-text ul li:last-child {
+    margin-bottom: 0;
+}
+
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.links-list li {
+    margin: 0;
+}
+
+.links-list a {
+    display: inline-block;
+    padding: 4px 0;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.2s ease;
+}
+
+.links-list a:hover,
+.links-list a:focus {
+    color: #008080;
+}
+
+.contact-email {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+@media (min-width: 640px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 1.2em;
+        padding: 6px 10px;
+    }
+
+    .about-inner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .product-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+main ul li {
+    margin-bottom: 15px;
+}
+
+article ul li {
+    margin-bottom: 0;
+}
+
+main a {
+    color: #008080;
+    text-decoration: none;
+}
+
+time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9em;
+}
+
+.list-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    display: inline;
+    color: #888;
+}
+
+article div {
+    margin-top: 20px;
+}
+
+article ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+article ul ul {
+    list-style: circle;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article ol {
+    list-style: decimal;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+.shop-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Project Images */
+.project-images {
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+
+/* Product Page */
+.product-description {
+    font-style: italic;
+    color: #555;
+    font-size: 1.05em;
+    margin: -10px 0 20px;
+}
+
+.product-price-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 20px 0 40px;
+}
+
+.product-price {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #333;
+}
+
+.product-buy-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7em;
+    font-weight: 700;
+    background: #008080;
+    color: #fff;
+    padding: 10px 48px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.product-buy-btn:hover {
+    background: #006666;
+}
+
+.product-buy-btn--disabled {
+    background: #999;
+    cursor: default;
+}
+
+.product-buy-btn--disabled:hover {
+    background: #999;
+}
+
+.product-details {
+    margin-top: 30px;
+}
+
+/* Product Gallery */
+.product-gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.product-gallery img {
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 0.85em;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #eee;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    border-bottom: 2px solid #333;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.footnotes {
+    margin-top: 40px;
+}
+
+sup[id^="fnref"],
+li[id^="fn"] {
+    scroll-margin-top: 150px;
+}

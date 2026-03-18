@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shops on eddie</title>
+    <link>https://eddiesamuels.com/shop/</link>
+    <description>Recent content in Shops on eddie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eddiesamuels.com/shop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cammy</title>
+      <link>https://eddiesamuels.com/shop/cammy/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://eddiesamuels.com/shop/cammy/</guid>
+      <description>BETA UNITS IN PRODUCTION&#xA;PREORDER SOON&#xA;INCLUDED Carrier board Raspberry Pi Computer Module 5 (16gb RAM) 2x IMX cameras 1x 18650 battery 1x 1TB NVMe Fasteners and mounts TECH SPECS Single 18650 battery power 2x 22-pin MIPI CSI-2 cameras M.2 Key M 2230 (PCIe 2.0) RP2354 microcontroller LSM6DSV 6-axis IMU SPH0645LM4H I2S Microphone USB-A 3.0 SuperSpeed USB-C charging, data, &amp;amp; CM5 boot flashing micro HDMI video output 2x user input buttons User RGB LED 4-pin fan connector </description>
+    </item>
+  </channel>
+</rss>
