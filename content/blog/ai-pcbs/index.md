@@ -1,6 +1,7 @@
 +++
 title = 'So you want to AI your PCBs?'
 date = 2026-02-22
+lastmod = 2026-06-10
 +++
 
 It's unclear how AI makes its way into the electronics and PCB world. There are a lot of players getting into the space and a lot of skeptical
@@ -15,7 +16,7 @@ There are a few approaches being taken, **design with code 💻**, **chat with d
 | 💻 | [Diode Computers](#diode-computers) | [diode.computer](https://www.diode.computer/) | [diodeinc](https://github.com/diodeinc) | ~$11M Series A (a16z) |
 | 💻 | [atopile](#atopile) | [atopile.io](https://atopile.io/) | [atopile](https://github.com/atopile/atopile) | $500K Seed (YC) |
 | 💻 | [tscircuit](#tscircuit) | [tscircuit.com](https://tscircuit.com/) | [tscircuit](https://github.com/tscircuit/tscircuit) | undisclosed (Boost VC) |
-| 💬 | [Flux](#flux) | [flux.ai](https://www.flux.ai/) | [buildwithflux](https://github.com/buildwithflux) | ~$12M Seed (Outsiders Fund) |
+| 💬 | [Flux](#flux) (fake) | [flux.ai](https://www.flux.ai/) | [buildwithflux](https://github.com/buildwithflux) | ~$12M Seed (Outsiders Fund) |
 | 📦 | [Quilter](#quilter) | [quilter.ai](https://www.quilter.ai/) | [quilterai](https://github.com/quilterai) | ~$40M Series B (Index) |
 | 📦 | [DeepPCB](#deeppcb) | [deeppcb.ai](https://deeppcb.ai/) | | InstaDeep (acquired by BioNTech) |
 
@@ -64,12 +65,13 @@ This is more of a copilot approach where you use a traditional user interface to
 makes a lot of sense and builds on the original GitHub copilot model in VSCode.[^2]
 
 #### Flux
-Founded in 2019 by Matthias Wagner, Lance Cassidy, and Christian Blank, they started as a fully collaborative in browser electronics design platform and tacked on an AI copilot in 2023.
+~~Founded in 2019 by Matthias Wagner, Lance Cassidy, and Christian Blank, they started as a fully collaborative in browser electronics design platform and tacked on an AI copilot in 2023.
 It seems like they dump a lot of money into influencer ads and you hear about them a lot if you watch hardware videos on YouTube. They have a credit based pricing model
 starting at $15/month and you can't even try it out without signing up for a 14 day trial which is a huge barrier to entry.
-I am curious to see the full version since I hear about it a lot but have never heard anyone who designs boards talk about it in a meaningful way.
+I am curious to see the full version since I hear about it a lot but have never heard anyone who designs boards talk about it in a meaningful way.~~
 
-![flux app](./images/flux.png)
+It is now clear that Flux is a complete sham of a company after their blatant freedom of speech attack against Adafruit.
+![adafruitVflux](./images/adafruitVflux.png)
 
 ### Blackbox
 This approach accepts minimal input form the user and gives you a finished board design.

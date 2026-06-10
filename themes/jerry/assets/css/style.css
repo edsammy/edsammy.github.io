@@ -220,6 +220,14 @@ time {
   font-size: 0.9em;
 }
 
+.last-updated {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75em;
+    color: #aaa;
+    line-height: 1.4;
+}
+
 .list-date {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9em;

@@ -4,7 +4,19 @@
     <article>
         <h2>{{ .Title }}</h2>
         {{ if and (ne .Section "projects") (ne .Section "shop") }}
+        {{ $hasLastmod := false }}
+        {{ with .File }}
+            {{ $source := readFile .Filename }}
+            {{ $frontMatter := "" }}
+            {{ with findRE `(?ms)\A(?:\+\+\+|---)\s.*?^(?:\+\+\+|---)\s*$` $source 1 }}
+                {{ $frontMatter = index . 0 }}
+            {{ end }}
+            {{ $hasLastmod = gt (len (findRE `(?m)^\s*lastmod\s*[:=]` $frontMatter)) 0 }}
+        {{ end }}
         <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        {{ if $hasLastmod }}
+        <span class="last-updated">last updated {{ $.Lastmod.Format "Jan 2, 2006" }}</span>
+        {{ end }}
         <div class="post-meta">
             <span>{{ lang.FormatNumber 0 .WordCount }} words</span>
             <span>• {{ printf "%.0f" $readingTime }} min read</span>
